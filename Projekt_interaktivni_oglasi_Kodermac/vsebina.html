@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uvod – Interaktivni oglasi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+
+<!-- NAV -->
+<!-- NAVIGACIJA -->
+<nav class="navbar navbar-expand-lg fixed-top black-nav">
+    <div class="container-fluid">
+        <a class="navbar-brand nav-text" href="glavna.html">Interaktivni oglasi.
+            <img src="img/BDFM_star.png" alt="Zvezda" class="nav-starpink">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link nav-text" href="uvod.html">Uvod</a></li>
+                <li class="nav-item"><a class="nav-link nav-text active" href="vsebina.html">Vsebina</a></li>
+                <li class="nav-item"><a class="nav-link nav-text" href="povzetek.html">Povzetek</a></li>
+                <li class="nav-item"><a class="nav-link nav-text" href="kviz.html">Kviz</a></li>
+                <li class="nav-item"><a class="nav-link nav-text" href="viri.html">Viri</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<section class="section bg-black black-section">
+  <div class="container text-center">
+
+    <h2 class="mb-4">Vrste interaktivnih elementov</h2>
+
+    <div class="interactive-cards d-flex flex-wrap justify-content-center gap-3">
+
+      <!-- Kartica 1: Klik in hover animacija -->
+      <div class="card interactive-card">
+        <h4>Klik & Hover Animacija</h4>
+        <p>Elementi, ki reagirajo na klike in hover.</p>
+        <video class="interactive-video" width="100%" height="140" autoplay muted loop>
+          <source src="img/hover video.mp4" type="video/mp4">
+        </video>
+     
+      </div>
+
+      <!-- Kartica 2: Interaktivni zemljevid -->
+      <div class="card interactive-card">
+        <h4>Interaktiven zemljevid</h4>
+        <p>Klik na regijo ali izdelek prikazuje dodatne informacije.</p>
+        <img src="img/interaktivni-map.gif" alt="Interaktivni zemljevid" class="card-gif">
+     
+      </div>
+
+      <!-- Kartica 3: Drsniki & Meniji -->
+      <div class="card interactive-card">
+        <h4>Drsniki & Meniji</h4>
+        <p>Uporabnik premika vsebino v različnih smereh, da odkrije več informacij ali slik (npr. Instagram swipe up).</p>
+        <img src="img/swipe-up.gif" alt="Drsniki & Meniji" class="card-gif">
+
+      </div>
+
+      <!-- Kartica 4: H5P Video -->
+      <div class="card interactive-card">
+        <h4>H5P Video</h4>
+        <p>Video, kjer uporabnik izbira zgodbo ali klikne element za več informacij.</p>
+        <div class="video-container">
+          <iframe src="https://www.youtube-nocookie.com/embed/2cHP1RZkQLI?si=2x_muJ0EIaVbQCyb" 
+                  title="Interaktivni video" 
+                  frameborder="0" 
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="section bg-black black-section">
+  <div class="container">
+
+    <h2 class="mb-4 text-center">Tehnologije interaktivnih spletnih oglasov</h2>
+    <p class="text-center mb-5">Osnovna orodja, ki jih uporabljamo za izdelavo interaktivnih oglasov</p>
+
+    <!-- HTML5 -->
+    <div class="card mb-4 p-3 bg-black text-pink">
+      <h4>HTML5</h4>
+      <ul>
+        <li>Struktura oglasa: elementi za slike, besedilo, gumbe.</li>
+        <li>Vgrajeni video ali audio.</li>
+        <li>Canvas za risanje animacij ali mini iger.</li>
+      </ul>
+     <p><strong>Za razmislek</strong> Kateri primer bi veljal za HTML5 interaktivne oglase:</p>
+
+  <div class="quiz-options">
+    <button class="quiz-btn" data-correct="false">Oglas v PDF obliki</button>
+    <button class="quiz-btn" data-correct="true">Klikabilni banner z animacijo</button>
+    <button class="quiz-btn" data-correct="false">Statična slika brez interakcije</button>
+  </div>
+
+    </div>
+
+    <!-- CSS3 -->
+    <div class="card mb-4 p-3 bg-black text-pink">
+      <h4>CSS3</h4>
+      <ul>
+        <li>Vizualni stil oglasa: barve, fonti, gradienti.</li>
+        <li>Animacije: hover efekti, prehodi (fade, slide).</li>
+        <li>Transformacije: povečanje, vrtenje, premikanje elementov ob interakciji.</li>
+      </ul>
+      <p><strong>Primer:</strong> gumbi, ki se ob hoverju premikajo ali spremenijo barvo, animirani bannerji z efekti.</p>
+      
+    </div>
+
+    <!-- JavaScript -->
+    <div class="card mb-4 p-3 bg-black text-pink">
+      <h4>JavaScript</h4>
+      <ul>
+        <li>Dinamična interaktivnost: kliki, drsniki, odpiranje menijev.</li>
+        <li>Nalaganje vsebine brez osveževanja strani (AJAX).</li>
+        <li>Obdelava dogodkov uporabnika (drag & drop, swipe, klik).</li>
+      </ul>
+      <p><strong>Primer:</strong> interaktivni zemljevid, drsnik slik, mini igra z izbiro poti, interaktivni kviz.</p>
+      
+    </div>
+
+
+<h2 class="mb-4 ar-section-title text-center">Napredna orodja: AR (Augmented Reality)</h2>
+
+   <!-- Ena velika kartica za AR -->
+<div class="card ar-card mb-4 p-4 bg-black text-pink">
+  <h4>Kaj je AR?</h4>
+  <p>
+    AR ali <strong>razširjena resničnost</strong> je tehnologija, ki združuje digitalne vsebine s pravim svetom v realnem času. 
+    Uporabnik lahko preko kamere na telefonu ali tablici vidi digitalne elemente, kot so slike, 3D modeli ali animacije, 
+    integrirane v okolje okoli sebe.
+  </p>
+
+  <h4>Uporaba v interaktivnih spletnih oglasih</h4>
+  <ul>
+    <li>Oglasi postanejo <strong>interaktivni in personalizirani</strong>, saj uporabnik lahko preizkusi izdelek v svojem okolju ali na sebi.</li>
+    <li>Povečuje <strong>angažiranost</strong> in boljšo vizualno izkušnjo.</li>
+  </ul>
+ 
+</div>
+
+
+
+
+<div class="ar-examples row mt-4">
+  <!-- Box 1: IKEA Kreative AR -->
+  <div class="col-md-6 mb-3">
+    <div class="card ar-example p-3 bg-black text-pink">
+      <h5>IKEA Kreative AR</h5>
+      <p>Uporabniki lahko preko aplikacije postavijo 3D modele pohištva v svoj dom in vidijo, kako bi izdelek izgledal v prostoru.</p>
+      <ul>
+        <li><strong>Interaktivno:</strong> možnost premikanja, spreminjanja barv ali materialov.</li>
+      </ul>
+      <img src="img/IKEA-Kreativ.jpg" alt="IKEA AR" class="ar-example-img mb-3">
+      <a href="https://vimeo.com/1092341503" target="_blank">Več o IKEA Kreativ</a>
+     
+
+    </div>
+  </div>
+
+  <!-- Box 2: Instagram AR filtri -->
+  <div class="col-md-6 mb-3">
+    <div class="card ar-example p-3 bg-black text-pink">
+      <h5>Instagram AR filtri za ličila</h5>
+      <p>Uporabniki preizkusijo make-up ali beauty produkte preko kamere.</p>
+      <ul>
+        <li><strong>Interaktivno:</strong> filtri se premikajo z obrazom, omogočajo klik za nakup ali preizkus različnih stilov.</li>
+      </ul>
+       <img src="img/AR_makeup.jpg" alt="IKEA AR" class="ar-example-img mb-3">
+      <a href="https://www.youtube.com/watch?v=k-OidZdLQOQ" target="_blank">Več o AR filtrih na instagramu kot del oglaševanja</a> 
+    
+    </div>
+  </div>
+</div>
+
+
+ <div class="container">
+  <div class="row">
+    <div class="col-12 text-end">
+      <a href="povzetek.html" class="btn custom-btn" id="nextnexttBtn">Naprej</a>
+    </div>
+  </div>
+</div>
+</section>
+
+
+  
+
+       
+ 
+
+<footer class="footer black-footer">© 2026 – Marja Kodermac</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="java.js"></script>
+
+</body>
+</html>
